@@ -3,20 +3,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="snake.js"></script>
     <title>Document</title>
 </head>
 <style>
+#div {
+    left: 50px;
+    top: 50px;
+    width: 20px;
+    height: 20px;
+    background: black;
+    position: absolute;
+}
+div2 {
+    width: 20px;
+    height: 20px;
+    background: green;
+    position: absolute;
+}
+
+
+#btn {
+    margin: 0 auto;
+    top: 100px;
+    left: 600px;
+    position: absolute;
+
+}
+#btn1 {
+    margin: 0 auto;
+    top: 100px;
+    left: 660px;
+    position: absolute;
+
+}
+#score {
+    top:120;
+    left: 600px;
+    position: absolute;
+}
 #map {
-    background: #6eb3d8;
+    background: #04a7f9;
     width: 500px;
     height: 500px;
     opacity: 0.3;
     position: absolute;
-    top: 0;
+    top: 50px;
+    left: 50px
+}
+#numberOfFood{
+    top:160;
+    left: 600px;
+    position: absolute;
 }
 </style>
 
 <body>
-        <div id="map"></div>
+    <div id="score"><p>当前速度为:<strong>10</strong></p></div>
+    <div id="numberOfFood"><p>当前实物数量为:<strong>0</strong></p></div>
+    <div id="div1"></div>
+    <div id="div"></div>
+    <input  id="btn" type="button" value="加速">
+    <input  id="btn1" type="button" value="减速">
+    <div id="map">  </div>
+    
 </body>
 </html>
